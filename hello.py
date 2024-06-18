@@ -2,15 +2,25 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello_world():
-    return "Hello, World"
+@app.route("/japan/tokyo")
+def tokyo():
+    return "Hello,tokyo in Japan"
 
-@app.route("/baseball")
-def baseball():
-    return "Ohtani"
+@app.route("/japan/ohsaka")
+def ohsaka():
+    return "Hello,ohsaka in Japan"
 
-@app.route("/football")
-def football():
-    return "Messi"
+@app.route("/japan/kyoto")
+def kyoto():
+    return "Hello,kyoto in Japan"
+
+
+
+# @app.route("/baseball/ohtani")
+# def baseball():
+#     return "Ohtani"
+
+# @app.route("/football/messi")
+# def football():
+#     return "Messi"
 
