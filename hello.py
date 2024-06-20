@@ -2,9 +2,19 @@ from flask import Flask
 
 app = Flask(__name__)
 
+html = '''
+<h1>HTMLの練習</h1>
+<ul>
+    <li>リスト1</li>
+    <li>リスト2</li>
+    <li>リスト3</li>
+</ul>
+
+'''
+
 @app.route("/")
 def hello():
-    return "<h1>Hello Python</h1>"
+    return html
 
 
 # @app.route("/japan/<city>")
