@@ -6,13 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello, {{ city }} in Japan</h1>
+    <h1>Hello,Japan</h1>
     <ul>
-        <li>リスト1</li>
-        <li>リスト2</li>
-        <li>リスト3</li>
-        <li>リスト4</li>
-        <li>リスト5</li>
+        {%  for bullet in bullets %}
+        <li>{{ bullet }}</li>
+        {% endfor %}
     </ul>
 </body>
 </html>
