@@ -1,20 +1,11 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
-html = '''
-<h1>HTMLの練習</h1>
-<ul>
-    <li>リスト1</li>
-    <li>リスト2</li>
-    <li>リスト3</li>
-</ul>
-
-'''
-
 @app.route("/")
 def hello():
-    return html
+    return render_template('hello.html')
 
 
 # @app.route("/japan/<city>")
