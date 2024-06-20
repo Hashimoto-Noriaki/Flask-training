@@ -8,11 +8,11 @@ bullets = [
     'リスト2',
     'リスト3',
     'リスト4',
-    'リスト5'
+    'リスト5',
     'リスト6',
 ]
 
-@app.route("/japan/<city>")
+@app.route("/")
 def hello():
     return render_template('hello.html',bullets=bullets)
 
