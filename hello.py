@@ -2,9 +2,14 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/japan/<city>")
-def tokyo(city):
-    return f'Hello, { city } in Japan'
+@app.route("/")
+def hello():
+    return "<h1>Hello Python</h1>"
+
+
+# @app.route("/japan/<city>")
+# def tokyo(city):
+#     return f'Hello, { city } in Japan'
 
 # @app.route("/japan/tokyo")
 # def tokyo():
