@@ -3,9 +3,18 @@ from flask import render_template
 
 app = Flask(__name__)
 
+bullets = [
+    'リスト1',
+    'リスト2',
+    'リスト3',
+    'リスト4',
+    'リスト5'
+    'リスト6',
+]
+
 @app.route("/japan/<city>")
-def hello(city):
-    return render_template('hello.html',city=city)
+def hello():
+    return render_template('hello.html',bullets=bullets)
 
 
 # @app.route("/japan/<city>")
