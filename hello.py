@@ -3,9 +3,9 @@ from flask import render_template
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
-    return render_template('hello.html')
+@app.route("/japan/<city>")
+def hello(city):
+    return render_template('hello.html',city=city)
 
 
 # @app.route("/japan/<city>")
